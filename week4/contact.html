@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - Photo Magazine</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+  <main>
+    <section class="contact-section">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>We're here to help. Feel free to get in touch with us for any inquiries or feedback.</p>
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <div class="input-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-details">
+                <p>For urgent matters, you can also reach us at:</p>
+                <p>Email: <a href="mailto:info@photomagazine.com">info@photomagazine.com</a></p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Photo Magazine. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #222; /* Change this to your desired background color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Change this to your desired link color */
+}
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+div a{
+    color:blue;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section {
+    background-image: url('./background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+.home-page {
+    background-color:lightblue; 
+    color: #333; 
+    padding: 100px 0;
+    text-align: center;
+}
+.gallery-page {
+    background-color:lightpink; 
+    padding: 50px 0;
+}
+
+.contact-section {
+    background-color: #f6f6f6; /* Replace with your desired background color */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+    /* Larger devices */
+    .gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .gallery-item {
+        flex-basis: calc(33.33% - 20px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Medium range devices */
+    .gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .gallery-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    /* Lower range devices */
+    .gallery {
+        display: block;
+    }
+
+    .gallery-item {
+        margin: 0 auto 20px;
+        max-width: 100%;
+    }
+} 
