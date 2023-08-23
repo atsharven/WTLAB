@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.04; 
+            font-size: 18px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .sample-image {
+            width: 48%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+        img{
+            height: 200px
+            width:1000px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Passport Application Form</h1>
+    <div class="watermark">
+        <p><img src="https://th.bing.com/th/id/OIP.v3wHRdXdi1Rc9obYeGYfWAHaMk?pid=ImgDet&rs=1" alt=""></p>
+        
+    </div>
+    
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="aadhar">
+            AADHAR number
+        </label>
+        <input type="number" id="aadhar" name="aadhar" required><br>
+
+        <label for="PAN">
+            PAN number
+        </label>
+        <input type="number" id="PAN" name="PAN" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" ></textarea><br>
+        
+        <label for="photo">Passport Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br>
+        
+        <label for="documents">
+            Documents:</label>
+        <input type="file" id="documents" name="documents" multiple accept=".pdf,.doc,.docx" required><br>
+        
+        <button type="submit">Submit Application</button>
+    </form>
+    
+    <p>For more information, visit the <a href="https://www.passportindia.gov.in" target="_blank">Passport Seva website</a>.</p>
+    
+    <div class="image-container">
+        <div class="sample-image">
+            <h2>Sample Indian Passport</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Indian_Passport_cover_2015.jpg" alt="Sample Indian Passport">
+        </div>
+        
+       
+    
+        
+    <footer>
+        <p>&copy; 2023 Ministry of External Affairs, Government of India. All rights reserved.&reg;</p>
+    </footer>
+</body>
+</html>
