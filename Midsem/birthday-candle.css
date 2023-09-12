@@ -1,0 +1,117 @@
+body{
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.petal1{
+  height: 150px;
+  width: 55px;
+  background-color: pink;
+  position: absolute;
+  border-top-right-radius: 150%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 150%;
+  border-bottom-right-radius: 50%;
+  rotate: -15deg;
+  right: 50%;
+  top: 80%;
+  animation: petal1move 3s infinite;
+}
+
+
+.petal2{
+  height: 150px;
+  width: 55px;
+  background-color: pink;
+  position: absolute;
+  border-top-right-radius: 150%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 150%;
+  border-bottom-right-radius: 50%;
+  rotate: 15deg;
+  right: 30%;
+  top: 80%;
+  animation: petal2move 3s infinite;
+}
+
+.petal3{
+  height: 150px;
+  width: 55px;
+  background-color: pink;
+  border-top-right-radius: 150%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 150%;
+  border-bottom-right-radius: 50%;
+  position: absolute;
+  right: 40%;
+  top: 79%;
+  animation: petal3move 3s infinite;
+}
+
+@keyframes petal3move {
+  50%{
+    transform: rotateX(-85deg);
+  }  
+}
+
+@keyframes petal2move {
+  50%{
+    rotate: 75deg;
+  }
+}
+
+@keyframes petal1move {
+  50%{
+    rotate:-75deg;
+  }
+}
+
+
+
+
+.containerofrot{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: gold;
+  right: 50%;
+  top: 20%;
+  background-color: yellow;
+  position: absolute;
+  animation: rotate 3s infinite linear;
+}
+
+.rotatep1{
+  position: relative;
+  height: 130px;
+  width: 55px;
+  border-top-right-radius: 150%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 150%;
+  border-bottom-right-radius: 50%;
+  background-color: pink;
+  top: -260%;
+  left: -3px;
+}
+
+.rotatep2{
+  position: relative;
+  height: 130px;
+  width: 55px;
+  border-top-right-radius: 150%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 150%;
+  border-bottom-right-radius: 50%;
+  background-color: pink;
+  top:-170px;
+  left: -93px;
+  rotate: -90deg;
+}
+
+
+@keyframes rotate{
+  0%{
+    rotate: 360deg;
+  }
+}
