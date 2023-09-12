@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: paleturquoise;
+
+}
+.board{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 400px;
+    width: 400px;
+    border: 5px solid brown;
+    color: brown;
+    background-color: burlywood;
+
+}
+
+.outer-square{
+    position: relative;
+    top: 5%;
+    left: 5%;
+    border: solid 5px black;
+    height:350px;
+    width:350px;
+    translate:(-50%,-50%);
+    
+    background-color:beige;
+
+
+}
+.inner-square{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border: solid 5px black;
+    height:180px;
+    width:180px;
+    transform: translate(-50%,-50%);
+    background-color:bisque;
+
+}
+.inner-circle{
+    position: relative;
+    transform: translate(-50%,-50%);
+
+    top: 50%;
+    left: 50%;
+    border: solid 1px darkgray;
+    height: 175px;
+    width: 175px;
+    border-radius: 90%;
+    background-color:whitesmoke;
+
+
+}
+.striker{
+    position: relative;
+    transform: translate(-50%,-50%);
+
+    top: 40%;
+    left: 50%;
+    border: solid 1px darkgray;
+    height: 40px;
+    width: 40px;
+    border-radius: 90%;
+    background-color:palevioletred;
+    animation: hit 3s linear  ;
+    
+}
+
+.goti1{
+    position: relative;
+    transform: translate(-50%,-50%);
+
+    top: -10%;
+    left: 50%;
+    border: solid 1px darkgray;
+    height: 35px;
+    width: 35px;
+    border-radius: 90%;
+    background-color:darkslategray;
+
+}
+.goti2{
+    position: relative;
+    transform: translate(-50%,-50%);
+
+    top: -10%;
+    left: 30%;
+    border: solid 1px darkgray;
+    height: 35px;
+    width: 35px;
+    border-radius: 90%;
+    background-color:beige;
+
+}
+
+.rani{
+    position: relative;
+    transform: translate(-50%,-50%);
+
+    top: 50%;
+    left: 50%;
+    border: solid 1px darkgray;
+    height: 35px;
+    width: 35px;
+    border-radius: 90%;
+    background-color:maroon;
+    animation: hit1 3s linear  ;
+    animation-delay: 2.6s;
+    
+
+
+}
+
+.hole1{
+    position: relative;
+    top: -56.5%;
+    left: -2.5%;
+    border: solid 2px darkgray;
+    height: 40px;
+    width: 40px;
+    border-radius: 90%;
+    background-color:black;
+
+}
+
+.hole2{
+    position: relative;
+    top: 26.5%;
+    left: -3.5%;
+    border: solid 2px darkgray;
+    height: 40px;
+    width: 40px;
+    border-radius: 90%;
+    background-color:black;
+
+}
+.hole3{
+    position: relative;
+    top: 14%;
+    left: 92.5%;
+    border: solid 2px darkgray;
+    height: 40px;
+    width: 40px;
+    border-radius: 90%;
+    background-color:black;
+
+}
+.hole4{
+    position: relative;
+    top: -91%;
+    left: 92%;
+    border: solid 2px darkgray;
+    height: 40px;
+    width: 40px;
+    border-radius: 90%;
+    background-color:black;
+
+}
+
+
+@keyframes hit{
+    0%{transform: translateX(-10px) translateY(0px)}
+    75%{transform: translateX(-20px) translateY(-110px)}
+    100%{transform: translateX(-30px) translateY(-180px)}
+}
+
+@keyframes hit1{
+    0%{transform: translateX(0px) translateY(0px)}
+    100%{transform: translateX(145px) translateY(-180px)}
+}

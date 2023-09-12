@@ -1,0 +1,99 @@
+body{
+    background-color: skyblue;
+    font-size: 50px;
+}
+.grass{
+    position:absolute;
+    top:50%;
+    left:0%;
+    height: 500px;
+    width: 100%;
+   background-image: url(./golff.jpg);
+   opacity: 0.8;
+}
+.ball{
+    position:relative;
+    top:200px;
+    left:100px;
+    height: 30px;
+    width:30px;
+    border-radius:50%;
+    background-color:grey;
+    box-shadow: -2px 4px 100px whitesmoke;
+    transform-origin: 315px 50%;
+    animation: rotate2 4s ease-in-out;
+    animation-delay: 1s;
+}
+.stick{
+    position: relative;
+    left:50px;
+    height: 200px;
+    width:10px;
+    background-color: black;
+    transform-origin: 50% 0%;
+    animation :rotate1 2s linear;
+
+}
+.triangle{
+    position: relative;
+    top:91%;
+    left:-21px;
+    width: 0; 
+    height: 0; 
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+
+}
+@keyframes rotate1 {
+    0%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-28deg);
+    }
+}
+
+.hole{
+    position: relative;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    left:700px;
+    top:-30px;
+
+}
+.flag{
+    position:relative;
+    width:5px;
+    height:200px;
+    background-color: orangered;
+    top:-250px;
+    left:718px;
+}
+.triangle2{
+    position: relative;
+    top:-5px;
+    left:-77px;
+    width: 0; 
+    height: 0; 
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-right: 40px solid red;
+}
+
+@keyframes rotate2{
+    0%{
+        transform: rotate(0deg);
+    }
+    99%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}

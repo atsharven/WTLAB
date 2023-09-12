@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.outer-square{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: brown;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.inner-square{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: beige;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.inner1{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+}
+
+.inner2{
+    height: 225px;
+    width: 225px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.hole1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 8%;
+    left: 8%;
+    background-color: black;
+    transform: translate(-50%,-50%);
+}
+
+.hole2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 92%;
+    top: -2%;
+    background-color: black;
+    transform: translate(-50%,-50%);
+}
+
+.hole3{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 92%;
+    top: 72%;
+    background-color: black;
+    transform: translate(-50%,-50%);
+}
+
+.hole4{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 8%;
+    top: 62%;
+    background-color: black;
+    transform: translate(-50%,-50%);
+}
+
+.ball1{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    animation: queen 3s linear infinite;
+}
+
+.ball2{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: blue;
+    transform: translate(-50%,-50%);
+    top: 90%;
+    left: 30%;
+    animation: stiker 3s linear infinite;
+}
+
+@keyframes stiker{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(50px,-115px);
+    }
+    100%{
+        transform: translate(-20px,-135px);
+    }
+}
+
+@keyframes queen{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(115px,-130px);
+    }
+}
