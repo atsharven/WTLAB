@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Validate password complexity
         if (!preg_match('/^(?=.*[A-Z])(?=.*[a-zA-Z0-9!@#$%^&*()-_+=])[a-zA-Z0-9!@#$%^&*()-_+=]{8,}$/', $password)) {
             echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Error!</strong> Please enter a password with at least one capital letter and a combination of alphanumeric characters and symbols.
+                <strong>Error!</strong> Please enter a 8-digit password with at least one capital letter and a combination of alphanumeric characters and symbols.
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
